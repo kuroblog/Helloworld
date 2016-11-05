@@ -5,11 +5,11 @@ namespace Helloworld.Basic
 
     class Program
     {
-        private const string Helloworld = nameof(Helloworld);
+        private const string Msg = nameof(Helloworld);
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Helloworld);
+            Console.WriteLine(Msg);
             Console.ReadKey();
         }
     }
