@@ -7,7 +7,9 @@ namespace Helloworld.Basic
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Helloworld!");
+            var msg = "Helloworld!";
+            
+            Console.WriteLine(msg);
             Console.ReadKey();
         }
     }
