@@ -36,60 +36,60 @@
 * [代码段](#)
 * [转义字符](#)
 
-#### <spac id="title">标题</spac>
+#### <span id="title">标题</span>
 
 ---
 
-#### <spac id="separate_line">分隔线</spac>
+#### <span id="separate_line">分隔线</span>
 
 ---
 
-#### <spac id="font">字体</spac>
+#### <span id="font">字体</span>
 
 ---
 
-* <spac id="bold_font">加粗</spac>
+* <span id="bold_font">加粗</span>
 
-* <spac id="italic_font">斜体</spac>
+* <span id="italic_font">斜体</span>
 
-* <spac id="remove_line">删除线</spac>
+* <span id="remove_line">删除线</span>
 
-#### <spac id="title">超链接</spac>
-
----
-
-#### <spac id="title">图像</spac>
+#### <span id="title">超链接</span>
 
 ---
 
-#### <spac id="title">锚点</spac>
+#### <span id="title">图像</span>
 
 ---
 
-#### <spac id="title">列表</spac>
+#### <span id="title">锚点</span>
 
 ---
 
-* <spac id="title">有序列表</spac>
-
-* <spac id="title">无序列表</spac>
-
-#### <spac id="title">表格</spac>
+#### <span id="title">列表</span>
 
 ---
 
-#### <spac id="title">段落</spac>
+* <span id="title">有序列表</span>
+
+* <span id="title">无序列表</span>
+
+#### <span id="title">表格</span>
 
 ---
 
-#### <spac id="title">块引用</spac>
+#### <span id="title">段落</span>
 
 ---
 
-#### <spac id="title">代码段</spac>
+#### <span id="title">块引用</span>
 
 ---
 
-#### <spac id="title">转义字符</spac>
+#### <span id="title">代码段</span>
+
+---
+
+#### <span id="title">转义字符</span>
 
 ---
