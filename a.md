@@ -220,8 +220,8 @@ ___
   #### Title2
   [title 2](#title2)
 
-  #### title 3
-  [title 3](#title-3)
+  #### title 33
+  [title 3](#title-33)
 
   #### 标题4
   [标题 4](#标题4)
@@ -244,8 +244,8 @@ ___
 #### Title2
 [title 2](#title2)
 
-#### title 3
-[title 3](#title-3)
+#### title 33
+[title 3](#title-33)
 
 #### 标题4
 [标题 4](#标题4)
@@ -261,6 +261,7 @@ ___
 
 **PS:**
 
+* 上面定义的title 33，是因为之前的演示是已经使用了title 3，如果出现同名的锚点定义，会跳转到第1次出现的位置
 * GitHub不支持HTML格式的锚点链接，此处使用的是符合GitHub规则的方法
 * 非英文的锚点字符，在单击跳转时，在浏览器的URL中会按照规则进行Encode和Decode
 
