@@ -164,21 +164,36 @@ ___
 [baidu-1]: https://www.baidu.com/ "链接到百度"
 [baidu-2]: https://www.baidu.com/ (link to baidu.com)
 
+**PS: 这里显示换行是因为在行尾添加了2个连续的空格，其功能是强制换行。在Markdown中段落以空行开始，并以空行结束，连续的行即使是换行了也会被解析成在一个段落内，区别只是会在之间加1个空格**
+
 ### Picture 图片
 
 ***
 
-描述
+图片的使用方式有多种
+
+1. `![图片的名称](图片的URL "可选的描述")`
+1. 先使用 `[图片的代号]: 图片的URL "可选的描述"` 或者 `[图片的代号]: 图片的URL (可选的描述)` 来定义图片，然后再使用 `![图片的名称][图片的代号]` 来引用
 
 *example*
 
   ```markdown
-  codes
+  ![图片MD](./assets/images/md_24.png "字符MD的图片")  
+  ![图片MD1][md1]  
+  ![图片MD2][md2]
+
+  [md1]: ./assets/images/md_48.png "48x48的图片"
+  [md2]: ./assets/images/md_48.png (128x128的图片)
   ```
 
 *output*
 
-**output**
+![图片MD](./assets/images/md_24.png "字符MD的图片")  
+![图片MD1][md1]  
+![图片MD2][md2]
+
+[md1]: ./assets/images/md_48.png "48x48的图片"
+[md2]: ./assets/images/md_128.png (128x128的图片)
 
 ### Anchor 锚点
 
