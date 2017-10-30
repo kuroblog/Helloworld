@@ -1,5 +1,7 @@
 # Test
 
+*Github 并不支持 HTML 形式的锚点链接，它有自己的规则*
+
 ---
 
 ### Page Index
