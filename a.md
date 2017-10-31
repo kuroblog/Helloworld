@@ -44,7 +44,7 @@
 
 表达式为 `# 标题内容` ，总共有6个级别，分别用1~6个 `#` 标记作为前缀来表示
 
-*example*
+***example***
 
   ```markdown
   # title 1
@@ -55,7 +55,7 @@
   ###### title 6
   ```
 
-*output*
+***output***
 
 <h1>title 1</h1>
 <h2>title 2</h2>
@@ -70,7 +70,7 @@
 
 表达式是 `***` 、 `---` 或者 `___` ，在单行内使用连续的3个或以上的 `*` 、 `-` 或者 `_` 标记，行内不能有其它字符或标记
 
-*example*
+***example***
 
   ```markdown
   ***
@@ -78,7 +78,7 @@
   ___
   ```
 
-*output*
+***output***
 
 ***
 ---
@@ -94,13 +94,13 @@ ___
 
   表达式是 `**需要加粗显示的内容**`
 
-  *example*
+  ***example***
 
     ```markdown
     这里是**加粗显示**的
     ```
 
-  *output*
+  ***output***
 
   这里是**加粗显示**的
 
@@ -108,13 +108,13 @@ ___
 
   表达式是 `*需要倾斜显示的内容*` 或者 ` _需要倾斜显示的内容_ ` ，以 `_` 标记来显示， `_` 标记的两边是需要保留空格的
 
-  *example*
+  ***example***
 
     ```markdown
     这里是*斜体显示*的，这是还是 _斜体显示_ 的
     ```
 
-  *output*
+  ***output***
 
   这里是*斜体显示*的，这是还是 _斜体显示_ 的
 
@@ -122,13 +122,13 @@ ___
 
   Markdown不支持删除线，但是可以通过使用HTML的 `del` 标记来实现，表达式是 `<del>需要添加删除线的内容</del>`
 
-  *example*
+  ***example***
 
     ```markdown
     这是需要显示<del>删除线</del>的
     ```
 
-  *output*
+  ***output***
 
   这是需要显示<del>删除线</del>的
 
@@ -142,7 +142,7 @@ ___
 1. `[超链接的名称](超链接的URL "可选的描述")`
 1. 先使用 `[超链接的代号]: 超链接的URL "可选的描述"` 或者 `[超链接的代号]: 超链接的URL (可选的描述)` 来定义超链接，然后再使用 `[超链接的名称][超链接的代号]` 来引用
 
-*example*
+***example***
 
   ```markdown
   <https://www.baidu.com/>  
@@ -154,7 +154,7 @@ ___
   [baidu-2]: https://www.baidu.com/ (link to baidu.com)
   ```
 
-*output*
+***output***
 
 <https://www.baidu.com/>  
 [baidu.com](https://www.baidu.com/ "link to baidu.com")  
@@ -175,7 +175,7 @@ ___
 1. `![图片的名称](图片的URL "可选的描述")`
 1. 先使用 `[图片的代号]: 图片的URL "可选的描述"` 或者 `[图片的代号]: 图片的URL (可选的描述)` 来定义图片，然后再使用 `![图片的名称][图片的代号]` 来引用
 
-*example*
+***example***
 
   ```markdown
   ![图片MD](./assets/images/md_24.png "字符MD的图片")  
@@ -186,7 +186,7 @@ ___
   [md2]: ./assets/images/md_48.png (128x128的图片)
   ```
 
-*output*
+***output***
 
 ![图片MD](./assets/images/md_24.png "字符MD的图片")  
 ![图片MD1][md1]  
@@ -211,7 +211,7 @@ ___
 |`### 1. 标题名称`|`[标题名称或描述](#1-标题名称)`|序号后以 `-` 标记来连接标题名称
 
 
-*example*
+***example***
 
   ```markdown
   #### title1
@@ -236,7 +236,7 @@ ___
   [标题 5.2](#52-sub-title-2)
   ```
 
-*output*
+***output***
 
 #### title1
 [title 1](#title1)
@@ -271,31 +271,43 @@ ___
 
 * #### Ordered List 有序列表
 
-  描述
+  表达式是 `1. 列表项名称` ，以数字开始，列表项的数字序号可以是非连续的
 
-  *example*
+  ***example***
 
     ```markdown
-    codes
+    1. 列表项 1
+    2. 列表项 2
+    3. 列表项 3
+
+    1. 列表项 a
+    999. 列表项 b
+    1. 列表项 c
     ```
 
-  *output*
+  ***output***
 
-  **output**
+  1. 列表项 1
+  2. 列表项 2
+  3. 列表项 3
+
+  1. 列表项 a
+  999. 列表项 b
+  1. 列表项 c
 
 * #### Unordered List 无序列表
 
   描述
 
-  *example*
+  ***example***
 
     ```markdown
     codes
     ```
 
-  *output*
+  ***output***
 
-  **output**
+  ****output****
 
 ### Table 表格
 
@@ -303,15 +315,15 @@ ___
 
 描述
 
-*example*
+***example***
 
   ```markdown
   codes
   ```
 
-*output*
+***output***
 
-**output**
+****output****
 
 ### Paragraph 段落
 
@@ -319,15 +331,15 @@ ___
 
 描述
 
-*example*
+***example***
 
   ```markdown
   codes
   ```
 
-*output*
+***output***
 
-**output**
+****output****
 
 ### Blockquote 块引用
 
@@ -335,15 +347,15 @@ ___
 
 描述
 
-*example*
+***example***
 
   ```markdown
   codes
   ```
 
-*output*
+***output***
 
-**output**
+****output****
 
 ### Code Segment 代码段
 
@@ -351,15 +363,15 @@ ___
 
 描述
 
-*example*
+***example***
 
   ```markdown
   codes
   ```
 
-*output*
+***output***
 
-**output**
+****output****
 
 ### Escape character 转义字符
 
@@ -367,15 +379,15 @@ ___
 
 描述
 
-*example*
+***example***
 
   ```markdown
   codes
   ```
 
-*output*
+***output***
 
-**output**
+****output****
 
 
 
