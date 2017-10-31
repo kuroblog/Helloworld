@@ -46,14 +46,14 @@
 
 ***example***
 
-  ```markdown
-  # title 1
-  ## title 2
-  ### title 3
-  #### title 4
-  ##### title 5
-  ###### title 6
-  ```
+```markdown
+# title 1
+## title 2
+### title 3
+#### title 4
+##### title 5
+###### title 6
+```
 
 ***output***
 
@@ -72,11 +72,11 @@
 
 ***example***
 
-  ```markdown
-  ***
-  ---
-  ___
-  ```
+```markdown
+***
+---
+___
+```
 
 ***output***
 
@@ -96,9 +96,9 @@ ___
 
   ***example***
 
-    ```markdown
-    这里是**加粗显示**的
-    ```
+  ```markdown
+  这里是**加粗显示**的
+  ```
 
   ***output***
 
@@ -110,9 +110,9 @@ ___
 
   ***example***
 
-    ```markdown
-    这里是*斜体显示*的，这是还是 _斜体显示_ 的
-    ```
+  ```markdown
+  这里是*斜体显示*的，这是还是 _斜体显示_ 的
+  ```
 
   ***output***
 
@@ -124,9 +124,9 @@ ___
 
   ***example***
 
-    ```markdown
-    这是需要显示<del>删除线</del>的
-    ```
+  ```markdown
+  这是需要显示<del>删除线</del>的
+  ```
 
   ***output***
 
@@ -144,15 +144,15 @@ ___
 
 ***example***
 
-  ```markdown
-  <https://www.baidu.com/>  
-  [baidu.com](https://www.baidu.com/ "link to baidu.com")  
-  [baidu.com][baidu-1]  
-  [百度][baidu-2]
+```markdown
+<https://www.baidu.com/>  
+[baidu.com](https://www.baidu.com/ "link to baidu.com")  
+[baidu.com][baidu-1]  
+[百度][baidu-2]
 
-  [baidu-1]: https://www.baidu.com/ "链接到百度"
-  [baidu-2]: https://www.baidu.com/ (link to baidu.com)
-  ```
+[baidu-1]: https://www.baidu.com/ "链接到百度"
+[baidu-2]: https://www.baidu.com/ (link to baidu.com)
+```
 
 ***output***
 
@@ -164,7 +164,7 @@ ___
 [baidu-1]: https://www.baidu.com/ "链接到百度"
 [baidu-2]: https://www.baidu.com/ (link to baidu.com)
 
-**PS: 这里显示换行是因为在行尾添加了2个连续的空格，其功能是强制换行。在Markdown中段落以空行开始，并以空行结束，连续的行即使是换行了也会被解析成在一个段落内，区别只是会在之间加1个空格**
+**PS: 这里显示换行是因为在行尾添加了2个连续的空格，其功能是强制换行**
 
 ### Picture 图片
 
@@ -177,14 +177,14 @@ ___
 
 ***example***
 
-  ```markdown
-  ![图片MD](./assets/images/md_24.png "字符MD的图片")  
-  ![图片MD1][md1]  
-  ![图片MD2][md2]
+```markdown
+![图片MD](./assets/images/md_24.png "字符MD的图片")  
+![图片MD1][md1]  
+![图片MD2][md2]
 
-  [md1]: ./assets/images/md_48.png "48x48的图片"
-  [md2]: ./assets/images/md_48.png (128x128的图片)
-  ```
+[md1]: ./assets/images/md_48.png "48x48的图片"
+[md2]: ./assets/images/md_48.png (128x128的图片)
+```
 
 ***output***
 
@@ -213,28 +213,28 @@ ___
 
 ***example***
 
-  ```markdown
-  #### title1
-  [title 1](#title1)
+```markdown
+#### title1
+[title 1](#title1)
 
-  #### Title2
-  [title 2](#title2)
+#### Title2
+[title 2](#title2)
 
-  #### title 33
-  [title 3](#title-33)
+#### title 33
+[title 3](#title-33)
 
-  #### 标题4
-  [标题 4](#标题4)
+#### 标题4
+[标题 4](#标题4)
 
-  #### 标题 5
+#### 标题 5
 
-  #### 5.1. 子标题 1
-  #### 5.2. Sub Title 2
+#### 5.1. 子标题 1
+#### 5.2. Sub Title 2
 
-  [标题 5](#标题-5)  
-  [标题 5.1](#51-子标题-1)  
-  [标题 5.2](#52-sub-title-2)
-  ```
+[标题 5](#标题-5)  
+[标题 5.1](#51-子标题-1)  
+[标题 5.2](#52-sub-title-2)
+```
 
 ***output***
 
@@ -275,15 +275,15 @@ ___
 
   ***example***
 
-    ```markdown
-    1. 列表项 1
-    2. 列表项 2
-    3. 列表项 3
+  ```markdown
+  1. 列表项 1
+  2. 列表项 2
+  3. 列表项 3
 
-    1. 列表项 a
-    999. 列表项 b
-    1. 列表项 c
-    ```
+  1. 列表项 a
+  999. 列表项 b
+  1. 列表项 c
+  ```
 
   ***output***
 
@@ -297,81 +297,149 @@ ___
 
 * #### Unordered List 无序列表
 
-  描述
+  无序列表的表达式有多种
+
+  1. `* 列表项`
+  1. `+ 列表项`
+  1. `- 列表项`
 
   ***example***
 
-    ```markdown
-    codes
-    ```
+  ```markdown
+  * 列表项 1
+  * 列表项 2
+    + 列表项 a
+      + 列表项 b
+    - 列表项 I
+  - 列表项 II
+  ```
 
   ***output***
 
-  ****output****
+  * 列表项 1
+  * 列表项 2
+    + 列表项 a
+      + 列表项 b
+    - 列表项 I
+  - 列表项 II
 
 ### Table 表格
 
 ***
 
-描述
+表达式如下，对齐不是必须的
+
+`|列头1|列头2|列头3`  
+`|-|:-|-:`  
+`|行1列1|行1列2|行1列3`
 
 ***example***
 
-  ```markdown
-  codes
-  ```
+```markdown
+|col 1|col 2|col 3
+|-|:-|-:
+|tom|16|99
+|jan|11|100
+```
 
 ***output***
 
-****output****
+|col 1|col 2|col 3
+|-|:-|-:
+|tom|16|99
+|jan|11|100
 
 ### Paragraph 段落
 
 ***
 
-描述
+在Markdown中段落以空行开始，并以空行结束，连续的行即使是换行了也会被解析成在一个段落内，区别只是会在之间加1个空格
 
 ***example***
 
-  ```markdown
-  codes
-  ```
+```markdown
+这里是段落1
+这里是段落2，虽然回车了但是没有换行，只是在2个段落之间添加了1个空格
+
+这里是段落3，这里换新行了是因为段落以空行开始，并以空行结束  
+这里是段落4，这里也换新行了，但不是一个新的段落，只是段落3在行尾使用了2个连续的空格来强制换行了
+```
 
 ***output***
 
-****output****
+这里是段落1
+这里是段落2，虽然回车了但是没有换行，只是在2个段落之间添加了1个空格
+
+这里是段落3，这里换新行了是因为段落以空行开始，并以空行结束  
+这里是段落4，这里也换新行了，但不是一个新的段落，只是段落3在行尾使用了2个连续的空格来强制换行了
 
 ### Blockquote 块引用
 
 ***
 
-描述
+表达式是 `> 需引用显示的内容`，首行首字符以1个 `>` 标记开始，可以连续多行或者嵌套使用
 
 ***example***
 
-  ```markdown
-  codes
-  ```
+```markdown
+> 这里是一个引用的内容，为测试效果打印一些信息：在战争模式(War Mode)中，玩家可以选择盟军和轴心国军队两个阵营，互相对抗完成战略目标。比如E3展演示中，进攻方的玩家通过完成占领据点、修复桥梁、炸毁弹药还有护送装甲车等一系列任务来赢得胜利。不过根据视频来看，这个模式的载具是无法操作的，只能使用载具上的武器。
+
+> 块1  
+> 块2
+> > 块2.1  
+> > 块2.2
+> > > 块2.2.1  
+> > > 块2.2.2
+> >
+> > 块2.3
+> 
+> 块3  
+> 块4
+```
 
 ***output***
 
-****output****
+> 这里是一个引用的内容，为测试效果打印一些信息：在战争模式(War Mode)中，玩家可以选择盟军和轴心国军队两个阵营，互相对抗完成战略目标。比如E3展演示中，进攻方的玩家通过完成占领据点、修复桥梁、炸毁弹药还有护送装甲车等一系列任务来赢得胜利。不过根据视频来看，这个模式的载具是无法操作的，只能使用载具上的武器。
+
+> 块1  
+> 块2
+> > 块2.1  
+> > 块2.2
+> > > 块2.2.1  
+> > > 块2.2.2
+> >
+> > 块2.3
+> 
+> 块3  
+> 块4
 
 ### Code Segment 代码段
 
 ***
 
-描述
+分为行代码段和块代码段，参照example
 
 ***example***
 
-  ```markdown
-  codes
-  ```
+```markdown
+`html` `csharp` `<del>123</del>`
+
+```csharp
+static void main(string[] args){
+  Console.WriteLine(nameof());
+}
+```
+```
 
 ***output***
 
-****output****
+`html` `csharp` `<del>123</del>`
+
+```csharp
+static void main(string[] args){
+  Console.WriteLine(nameof());
+}
+```
 
 ### Escape character 转义字符
 
@@ -391,4 +459,4 @@ ___
 
 
 
- 
+
